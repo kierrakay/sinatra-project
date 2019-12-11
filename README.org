@@ -1,0 +1,14 @@
+save and edit your diary entries!
+SHOW ERRORS TO USER
+* GET /failure 
+CREATE A USER ACCOUNT 
+* GET /signup 
+* POST /signup 
+CRUD ON ENTRY
+* GET /entries 
+* GET \/entries/:id
+* GET \/entries/new 
+* POST /entries
+* GET \/entries/:id/edit
+* PATCH \/entries/:id
+* DELETE \/entries/:id
