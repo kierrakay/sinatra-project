@@ -10,4 +10,8 @@ get '/' do
  get '/failure' do 
     erb :failure 
  end 
+
+ get '/signup' do 
+    erb :signup
+end
 end
