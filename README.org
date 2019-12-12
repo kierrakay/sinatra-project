@@ -1,6 +1,6 @@
 save and edit your diary entries!
 SHOW ERRORS TO USER
-* GET /failure 
+* GET /failure - done
 CREATE A USER ACCOUNT 
 * GET /signup 
 * POST /signup 
