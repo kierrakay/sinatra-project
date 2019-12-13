@@ -33,12 +33,34 @@ get '/login' do
     erb :login 
 end
 
+get '/logout' do 
+    session.clear 
+    redirect '/'
+end 
+
+helpers do 
+    def logged_in? 
+        !!session[:user_id]
+    end
+
+    def redirect_if_not_logged_in 
+        unless logged_in? 
+            redirect '/login'
+        end 
+    end
+
+    def current_user 
+        User.find(session[:user_id])
+    end
+end
+
+
 post '/login' do 
     #Finder user with this username 
     user = User.find_by(username: params[:username])
     if user && user.authenticate(params[:password])
         session[:user_id] = user.id 
-        redirect '/'
+        redirect '/entries'
     else 
         @errors = ["invalid username or password"] 
     erb :failure

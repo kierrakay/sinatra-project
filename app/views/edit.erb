@@ -1,0 +1,23 @@
+<h1>edit</h1>
+
+<form method="POST" action="/entries/<%= @entry.id%>">
+    <input type="hidden" name="_method" value="patch">
+<p> 
+<label for="author">Author:</label>
+<input type="text" name="author" value="<%= @entry.author %>">
+</p>
+<p>
+    <label for="mood">Mood:</label>
+    <input type="text" name="mood" value="<%= @entry.mood %>">
+</p>
+<p>
+<label for="body">Body:</label>
+<input type="text" name="body" value="<%= @entry.body %>">
+</p>
+<p>
+        <input type="submit" value="create">
+    </p>
+
+</form>
+
+<a href="/entries">back</a>

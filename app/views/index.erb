@@ -1,0 +1,15 @@
+<h1> All Entries </h1>
+    
+<ul> 
+     <% @entries.each do |entry| %>
+        <li>
+             <a href="/entries/<%=entry.id %>/edit">
+                 "<%=entry.body %>" - <%= entry.author %>
+            </a>
+        </li>
+    <% end %>
+ </ul>
+
+
+    <a href="/entries/new">New</a>
+    <a href="/logout">Logout</a>
