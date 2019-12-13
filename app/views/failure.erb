@@ -1,9 +1,11 @@
 <h1>Error</h1>
+<h3> Ugh uh, you have hit an error </h3>
 <% if @errors %>
 <ul>
     <% @errors.each do |error| %>
         <li><%= error %></li>
     <% end %>
 </ul>
+<a href="/login">back</a>
 <% end %> 
 

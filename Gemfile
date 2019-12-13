@@ -15,4 +15,5 @@ gem 'bcrypt'
 group :test, :development do
   gem 'pry'
   gem 'byebug'
+  gem 'rubocop'
 end

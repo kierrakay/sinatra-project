@@ -3,7 +3,7 @@ class EntriesController < ApplicationController
     get '/entries' do
         redirect_if_not_logged_in 
         @entries = current_user.entries
-        erb :index 
+        erb :show
     end
 
  get '/entries/new' do 
@@ -47,16 +47,17 @@ delete '/entries/:id' do
     private 
 
     def entry_params 
-        { author: params[:author], mood: params[:mood], body: params[:body], user: current_user}
+        { author: params[:author], mood: params[:mood], title: params[:title], body: params[:body], time: params[:date], user: current_user}
 end
 
  def set_entry 
     @entry = Entry.find_by(id: params[:id])
     unless @entry
-        @errors = ["invalied entry id"] 
+        @errors = ["invalid entry id"] 
        redirect "/"
-    end 
 end
+end
+
 end 
 
 

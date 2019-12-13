@@ -7,7 +7,7 @@ class ApplicationController < Sinatra::Base
     end
     
 get '/' do 
-"<h1>Hello, World</h1>"
+erb :index
  end 
 
  get '/failure' do 
@@ -22,9 +22,10 @@ end
 post '/signup' do 
     user = User.new(user_params)
     if user.save
-        redirect '/'
+        session[:user_id] = user.id
+        redirect '/entries'
     else 
-        @errors = ["signup failed"] 
+        @errors = user.errors.full_messages
         erb :failure
     end
 end 
@@ -62,11 +63,16 @@ post '/login' do
         session[:user_id] = user.id 
         redirect '/entries'
     else 
-        @errors = ["invalid username or password"] 
+        @errors = ["Please enter a valid username and password to log into your account"] 
     erb :failure
 end
 end 
 
+get '/entries' do
+
+    @user = User.find(session[:user_id])
+    erb :home
+end
 private 
 
 def user_params
