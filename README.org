@@ -2,13 +2,18 @@ save and edit your diary entries!
 SHOW ERRORS TO USER
 * GET /failure - done
 CREATE A USER ACCOUNT 
-* GET /signup 
-* POST /signup 
+* GET /signup - done
+* POST /signup - done
 CRUD ON ENTRY
-* GET /entries 
-* GET \/entries/:id
-* GET \/entries/new 
-* POST /entries
-* GET \/entries/:id/edit
-* PATCH \/entries/:id
+* GET /entries -done
+* GET \/entries/:id -done
+* GET \/entries/new -done
+* POST /entries -done
+* GET \/entries/:id/edit -edit
+* PATCH \/entries/:id -edit
 * DELETE \/entries/:id
+
+failures erb 
+
+<h1>Flatiron Bank Error</h1>
+<p>It seems there was a problem. Please return to <a href="/">the home page</a> and try again.</p>

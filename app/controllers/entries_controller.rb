@@ -38,6 +38,12 @@ erb :failure
 end
 end
 
+delete '/entries/:id' do
+    set_entry 
+    @entry.destroy
+    redirect '/entries'
+   end
+
     private 
 
     def entry_params 

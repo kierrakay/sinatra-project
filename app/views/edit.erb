@@ -20,4 +20,9 @@
 
 </form>
 
+<form action="/entries/<%= @entry.id%>" method="POST">
+  <input id="hidden" type="hidden" name="_method" value="delete" />
+ <input type="submit" value="delete"/>
+ </form>
+
 <a href="/entries">back</a>
