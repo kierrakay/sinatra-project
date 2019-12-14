@@ -1,16 +1,31 @@
 <h1> Login </h1>
-<form method="POST" action="/login">
-    <p> 
-        <label for="username">Username:</label>
-        <input type="text" name="username">
-    </p>
-    <p>
-    <label for="password">Password:</label>
-    <input type="password" name="password">
-    </p>
-    <p>
-        <input type="submit" value="submit">
-    </p>
-    # <a href="/signup">Sign Up</a>
 
+
+<div class="field">
+<form method="POST" action="/login">
+
+<p class="control has-icons-left has-icons-right">
+  <input class="input" type="text" name="username" placeholder="Username">
+  <span class="icon is-small is-left">
+    <i class="fas fa-envelope"></i>
+  </span>
+  <span class="icon is-small is-right">
+    <i class="fas fa-check"></i>
+  </span>
+</p>
+</div>
+<div class="field">
+<p class="control has-icons-left">
+  <input class="input" type="password" name="password" placeholder="Password">
+  <span class="icon is-small is-left">
+    <i class="fas fa-lock"></i>
+  </span>
+</p>
+</div>
+<div class="field">
+<p class="control">
+  <input class="button is-success" type="submit" value="login">
+ 
+</p>
 </form>
+</div>
