@@ -47,7 +47,7 @@ delete '/entries/:id' do
     private 
 
     def entry_params 
-        { author: params[:author], mood: params[:mood], title: params[:title], body: params[:body], time: params[:date], user: current_user}
+        { author: params[:author], mood: params[:mood], title: params[:title], body: params[:body], user: current_user}
 end
 
  def set_entry 

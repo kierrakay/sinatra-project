@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_13_053655) do
+ActiveRecord::Schema.define(version: 2019_12_29_234847) do
 
   create_table "entries", force: :cascade do |t|
     t.string "author"
@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2019_12_13_053655) do
     t.string "body"
     t.integer "user_id"
     t.string "title"
-    t.date "time"
   end
 
   create_table "users", force: :cascade do |t|
