@@ -2,7 +2,7 @@ require 'byebug'
 class ApplicationController < Sinatra::Base
     configure do 
         set :views, 'app/views'
-        set :public_folder, 'css/style.css'
+        set :public_folder, 'public'
         enable :sessions
         set :session_secret, "password_security"
     end
