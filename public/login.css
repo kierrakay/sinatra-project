@@ -1,0 +1,26 @@
+body, html {
+    height: 700px;
+  }
+  
+
+  body {
+    border: 8px solid black;
+    padding: 25px;
+    background: url("https://images.unsplash.com/flagged/photo-1551373916-bdaddbf4f881?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+     background-size: 100% 100%;
+     overflow: hidden;
+   
+    }
+
+
+    .login-box {
+        width: 280px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    
+    }
+    
