@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <title>Honestly, Wtf</title>
     <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 <div class="login-box">
 <form method="POST" action="/login">
 <h1> Login </h1>
 <div class="textbox">
+<i class="fa fa-user" aria-hidden="true"></i> 
 <input class="input" type="text" name="username" placeholder="Username">
 </div>
 
 <div class="textbox">
+<i class="fa fa-lock" aria-hidden="true"></i>
 <input class="input" type="text" name="password" placeholder="Password">
 </div>
 
-<input type="submit" value="login">
+<input class="btn" type="button" name="" value= "Sign in"> 
+
+<span> Not registered? </span> <a href="/signup">Create account</a>
 </form>
 </div>
 </body>

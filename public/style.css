@@ -5,6 +5,8 @@ h1 {
     letter-spacing: .03em;
     margin-bottom: 2px;
     color: rgb(21, 55, 104);
+    border-bottom: 6px solid black;
+   
 }
 
 h2 {
