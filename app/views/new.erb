@@ -11,10 +11,13 @@
 <body>
 
 
-
-
-<h1> Create a new entry </h1>
-<form method="POST" action="/entries">
+<div class="wrapper">
+    <!-- HEADER -->
+   <h1> Think positive, Be positive</h1>
+    <!-- SUB HEAD -->
+<h2>The world is yours..</h2>
+    <div id="content">
+  <form method="POST" action="/entries">
 <p> 
 <label for="author">Author:</label>
 <input type="text" name="author">
@@ -36,9 +39,14 @@
 <input type="submit" value="create">
 </p>
 </form>
+    
+    <a href="/entries">back</a>
+<%# <ul> 
+<li>
+ </ul> %>
 
-
-<a href="/entries">back</a>
+    </div>
+  </div>
 
 </body>
 </html>

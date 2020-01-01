@@ -1,4 +1,25 @@
-<h1>edit</h1>
+<!DOCTYPE html> 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Honestly, Wtf</title>
+    <link rel="stylesheet" href="/show.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+
+
+
+<div class="wrapper">
+    <!-- HEADER -->
+   <h1> Why are you starting this writing journey?</h1>
+    <!-- SUB HEAD -->
+<%# <h2>The world is yours..</h2> %>
+    <div id="content">
 
 <form method="POST" action="/entries/<%= @entry.id%>">
     <input type="hidden" name="_method" value="patch">
@@ -32,3 +53,9 @@
 
  
 <a href="/entries">back</a>
+
+
+    </div>
+  </div>
+</body>
+</html>
