@@ -1,7 +1,41 @@
-<h1> All Entries </h1>
+<!DOCTYPE html> 
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Honestly, Wtf</title>
+    <link rel="stylesheet" href="/show.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
+<body>
+
+<%# <div class="topnav">
+  <a class="active" href="/logout">Logout</a>
+  <a href="/signup">CREATE ACCOUNT</a>
+</div> %>
+
+  <div class="wrapper">
+    <!-- HEADER -->
+    <h1>Life can be a mess..</h1>
+    <!-- SUB HEAD -->
+<h2>That doesn't mean you have to be. Let your thoughts flow..</h2>
+    <div id="content">
+      <!-- IMAGES, SMALL SUB HEADS, PARAGRAPHS, LINKS -->
+      <%# <img src="./images/transportation/transit.jpg" alt="Modern Transit"> %>
+     <h3>All Entries</h3>
+      <%# <p>Once a mudbrick waystation along desert trading routes, Riyadh is now one of the wealthiest cities in the world. The country’s political, financial and administrative capital is also a city with a fascinating subtext.</p>
+        <h3>History</h3>
+      <p>Riyadh (/rɨˈjɑːd/; Arabic: الرياض‎ ar-Riyāḍ pronounced [arːiˈjɑːdˤ],"The Gardens") is the capital and largest city of Saudi Arabia. It is also the capital of Riyadh Province, and belongs to the historical regions of Najd and Al-Yamama. It is situated in the center of the Arabian Peninsula on a large plateau, and is home to 5,254,560 people, and the urban center of a region with a population of close to 7 million people.</p> %>
+         <%# <img src="./images/garden.jpg" alt="Riyadh Garden"> %>
+           <%# <p>The city is divided into 15 municipal districts, managed by Riyadh Municipality headed by the mayor of Riyadh, and the Riyadh Development Authority, chaired by the governor of Riyadh Province, Khalid bin Bandar Al Saud. The current mayor of Riyadh is Abdullah bin Abdul Rahman Al Mogbel, appointed in 2012. Riyadh has the largest all female university in the world, the Princess Nora bint Abdulrahman University. It has been designated as a Beta World City.</p>
+           <img src="./images/transportation/camels-in-truck.jpg" alt="The roads of Riyadh">
+           <h3>Sources</h3> %>
+      <%# <a href="http://www.lonelyplanet.com/saudi-arabia/riyadh" target="_blank">Lonely Planet</a>
+       <a href="http://en.wikipedia.org/wiki/Riyadh">Wikipedia</a> %>
 <ul> 
+
+<%# original code %>
      <% @entries.each do |entry| %>
         <li>
              <a href="/entries/<%=entry.id %>/edit">
@@ -14,3 +48,12 @@
 
     <a href="/entries/new">New</a>
     <a href="/logout">Logout</a>
+<%# original  code %>
+
+
+    </div>
+  </div>
+
+
+    </body>
+</html>

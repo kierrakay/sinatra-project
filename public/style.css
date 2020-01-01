@@ -13,11 +13,12 @@ body, html {
         background-attachment: fixed;
         background-size: 100% 100%;
         background-position: center;
+        overflow: hidden;
       }
 
       /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: black;
     overflow: hidden;
   }
   
