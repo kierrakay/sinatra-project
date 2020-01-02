@@ -1,5 +1,5 @@
 body, html {
-    height: 800px;
+    height: 700px;
   }
 
   /* Add a black background color to the top navigation */
@@ -36,16 +36,19 @@ body, html {
     border: 8px solid black;
     padding: 25px;
     background: url("https://images.unsplash.com/photo-1531824475211-72594993ce2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-    background-size: cover;
+    /* background-size: cover; */
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 100%;
     background-repeat: round;
+
+    background-size: 100% 100%;
+    background-position: center;
   }
 
   
   .wrapper {
-    /* background-color:white; */
+    /* background-color:green; */
     margin: 0 auto;
     width: 60%;
     padding-bottom: 40px;
@@ -54,10 +57,10 @@ body, html {
   #content {
     padding: 20px;
     opacity: 1;
-    background: rgba(238, 72, 72, 0.85);
+    background: white;
     /* background: rgba(255,255,255,.85); */
   }
-  
+ 
   h1, h2 {
     text-align: center;
     font-family: 'Gabriela', serif;
@@ -119,7 +122,15 @@ body, html {
     .wrapper {
       width: 95%;
     }
-    
 
-  }
   
+    input[type=submit]{
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+

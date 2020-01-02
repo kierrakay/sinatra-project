@@ -4,23 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Honestly, Wtf</title>
-    <link rel="stylesheet" href="/show.css">
+    <link rel="stylesheet" href="/new.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px; 
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 20px; width: 100%; height: 60px;
+}
+
+input[type=text] {
+
+    width: 100%;
+    border: 2px solid;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+input [type=text]:focus{
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+
+</style>
+
+
 </head>
 
 <body>
+<div class="topnav">
+  <a class="active" href="/logout">Logout</a>
+ <a href="/entries">Back</a>
+</div>
 
 
 <div class="wrapper">
     <!-- HEADER -->
-   <h1> Think positive, Be positive</h1>
+   <h1> Think positive, Be positive.</h1>
     <!-- SUB HEAD -->
-<h2>The world is yours..</h2>
+<%# <h2>The world is yours..</h2> %>
     <div id="content">
+
   <form method="POST" action="/entries">
 <p> 
+
 <label for="author">Author:</label>
-<input type="text" name="author">
+<input type="text" name="author"  width="48" >
 </p>
 <p>
     <label for="mood">Mood:</label>
@@ -33,19 +73,14 @@
 <p>
 <label for="body">Body:</label>
 <input type="text" name="body">
-</p>
-
 <p>
-<input type="submit" value="create">
+<input class="btn" type="submit" value="Create">
 </p>
 </form>
-    
-    <a href="/entries">back</a>
-<%# <ul> 
-<li>
- </ul> %>
+ 
 
-    </div>
+
+    <%# </div> %>
   </div>
 
 </body>

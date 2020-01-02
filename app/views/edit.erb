@@ -4,13 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Honestly, Wtf</title>
-    <link rel="stylesheet" href="/show.css">
+    <link rel="stylesheet" href="/edit.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+.btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  width: 50%;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
+}
+
+.btn{
+  width: 100%;
+  left: 0;
+  bottom: 10px;
+  position: absolute;
+}
+
+
+input[type=text] {
+
+    width: 100%;
+    border: 2px solid;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+input [type=text]:focus{
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+</style>
+
+
+
+
 </head>
 
 <body>
 
-
+<div class="topnav">
+  <a class="active" href="/logout">Logout</a>
+ <a href="/entries">Back</a>
+</div>
 
 
 
@@ -40,22 +97,28 @@
 <input type="text" name="body" value="<%= @entry.body %>">
 </p>
 <p>
+</div>
 
-        <input type="submit" value="create">
+
+
+<div class="btn-group">
+  <button class="button">Edit</button>
+ <%# <input class="btn" type="submit" value="create"> %>
+
+        </form>
+        </div>
+
+       <div class="btn-group">
         <form action="/entries/<%= @entry.id%>" method="POST">
+         <%# <div class="btn-group"> %>
+  <%# <button class="button">Delete</button> %>
   <input id="hidden" type="hidden" name="_method" value="delete" />
- <input type="submit" value="delete"/>
- </form>
-    </p>
-
-</form>
-
-
- 
-<a href="/entries">back</a>
-
+   <button class="button">Delete</button>
+    <%# <input class="btn" type="submit" value="delete"/> %>
+   </form>
+  </div>
 
     </div>
-  </div>
+
 </body>
 </html>
